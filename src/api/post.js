@@ -10,6 +10,18 @@ export const getPost = async (id) => {
     return post.json()
 }
 
+export const createPost = async (post) => {
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+        method: "POST",
+        body: JSON.stringify(post),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+
+    return response.json()
+}
+
 export const getPostsOfUser = async (userId) => {
     const posts = await fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)
 
