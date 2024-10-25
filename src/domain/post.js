@@ -1,4 +1,4 @@
-import {createPost, getAllPosts} from '../api/post.js';
+import {createPost, getAllPosts, updatePost} from '../api/post.js';
 
 export const createNewPost = async (postFormData, userId) => {
     const allExistingPosts = await getAllPosts()
@@ -17,3 +17,6 @@ export const createNewPost = async (postFormData, userId) => {
 
     return createPost(post)
 }
+
+export const updateExistingPost = async (postFormData, userId) =>
+    updatePost(postFormData.id, postFormData.title, postFormData.body, userId)
