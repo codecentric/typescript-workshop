@@ -23,12 +23,14 @@ export const createPost = async (post) => {
 }
 
 export const updatePost = async (postId, title, body, userId) => {
+    const existingPost = await getPost(postId)
+
     const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`, {
         method: "PUT",
         body: JSON.stringify({
             id: postId,
-            title: title,
-            body: body,
+            title: title || existingPost.title,
+            body: body || existingPost.body,
             userId: userId
         }),
         headers: {
