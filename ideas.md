@@ -1,0 +1,1 @@
+`api/post.js -> updatePost` Parameter `title` und `body` sind potentiell `undefined`.
