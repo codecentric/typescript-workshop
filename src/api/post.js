@@ -29,8 +29,8 @@ export const updatePost = async (postId, title, body, userId) => {
         method: "PUT",
         body: JSON.stringify({
             id: postId,
-            title: title || existingPost.title,
-            body: body || existingPost.body,
+            title: title ?? existingPost.title,
+            body: body ?? existingPost.body,
             userId: userId
         }),
         headers: {
