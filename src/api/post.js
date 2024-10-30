@@ -25,6 +25,10 @@ export const createPost = async (post) => {
 export const updatePost = async (postId, title, body, userId) => {
     const existingPost = await getPost(postId)
 
+    if (!existingPost) {
+        throw new Error(`Post with ID ${postId} does not exist`)
+    }
+
     const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`, {
         method: "PUT",
         body: JSON.stringify({
