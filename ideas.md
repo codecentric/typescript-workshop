@@ -9,3 +9,6 @@
 # `domain/user -> getUserRank`
 - Enum `UserRank` vs String-Literal-Union
 
+# Handout/Zusammenfassung
+
+- Ein Cheat-Cheat drucken, mit den Key-Learnings des Workshops.
