@@ -7,6 +7,7 @@
 
 # `domain/user -> getUserRank`
 - Enum `UserRank` vs String-Literal-Union
+- `UserService.getUserRank` mit Bug, dass `await` vor `this.loadUser` fehlt. 
 
 # Handout/Zusammenfassung
 
