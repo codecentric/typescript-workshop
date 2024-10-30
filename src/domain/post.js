@@ -1,4 +1,4 @@
-import {createPost, getAllPosts, updatePost} from '../api/post.js';
+import {createPost, getAllPosts, getPost, updatePost} from '../api/post.js';
 
 export const createNewPost = async (postFormData, userId) => {
     const allExistingPosts = await getAllPosts()
@@ -18,5 +18,16 @@ export const createNewPost = async (postFormData, userId) => {
     return createPost(post)
 }
 
-export const updateExistingPost = async (postFormData, userId) =>
-    updatePost(postFormData.id, postFormData.title, postFormData.body, userId)
+export const updateExistingPost = async (postFormData, userId) => {
+    const postId = postFormData.id;
+    const existingPost = await getPost(postId)
+
+    if (!existingPost) {
+        throw new Error(`Post with ID ${postId} does not exist`)
+    }
+
+    const title = postFormData.title ?? existingPost.title
+    const body = postFormData.body ?? existingPost.body
+
+    return updatePost(postId, title, body, userId);
+}
