@@ -39,4 +39,18 @@ export class UserService {
 
         return getUserRank(userId)
     }
+
+    async updateUserRanks() {
+        this.users = this.users.map(user => {
+            // TODO: User Rank ermitteln (getUserRankForInternal oder getUserRankForExternal)
+        })
+    }
+
+    getUserRankForInternal(user) {
+        // Irgendwas ermitteln für internen User
+    }
+
+    getUserRankForExternal(user) {
+        // Irgendwas ermitteln für externen User
+    }
 }
