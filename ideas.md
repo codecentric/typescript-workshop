@@ -35,7 +35,8 @@
 2. Lernblock: Class vs Function
    - Class als Datenstruktur in Type überführen (class User)
    - domain/userService.js
-   - TODO: ALLE ???
+   - ALLE: domain/postService.js typen
+   - Bonus: dashboard.js typen
 3. Lernblock: Generics und Co
    - domain/user.js -> getUserRank
    - domain/advancedUserService.js -> updateUserRanks
@@ -50,6 +51,7 @@
 - Dinge die fehlen
   - `as X`
   - `const a: Type = callJavaScriptFunctionWithoutTypes()`
+  - Svelt und Immutable bzw. Re-Render bei State-Änderungen
 
 # Handout/Zusammenfassung
 
