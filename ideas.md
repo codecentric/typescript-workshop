@@ -8,7 +8,7 @@
 # `domain/user -> getUserRank`
 - Enum `UserRank` vs String-Literal-Union
 - `UserService.getUserRank` mit Bug, dass `await` vor `this.loadUser` fehlt. 
-- Zeigen wie wir mit discriminated Unions die richtige Callback aufrufen (siehe TODO)
+- Zeigen wie wir mit discriminated Unions die richtige Funktion aufrufen (siehe TODO)
   > interface InternalUser {
   >   name: string;
   >   type: "INTERNAL_USER";
