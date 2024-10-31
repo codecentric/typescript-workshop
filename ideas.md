@@ -35,6 +35,16 @@
 2. Lernblock: Class vs Function
    - Class als Datenstruktur in Type überführen (class User)
    - domain/userService.js
+   - TODO: ALLE ???
+3. Lernblock: Generics und Co
+   - domain/user.js -> getUserRank
+   - domain/advancedUserService.js -> updateUserRanks
+   - domain/user.js -> formatPhoneNumber
+   - ALLE: domain/user.js -> mapUserData + getUserNames (+ search.js)
+4. Lernblock: Types beim Testen
+   - TODO: ???
+5. Lernblock: Tooling
+   - TODO: ???
 
 # Handout/Zusammenfassung
 
