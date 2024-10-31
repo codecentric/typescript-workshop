@@ -17,7 +17,10 @@
   >   name: string;
   >   type: "EXTERNAL";
   > }
-- formatPhoneNumber für Generics - Es geht ein Internal oder External User rein und kommt entsprechend wieder raus.
+- formatPhoneNumber für Generics
+  - Es geht ein Internal oder External User rein und kommt entsprechend wieder raus.
+  - Wenn wir dem Generic ein `extends {phone: string}` machen, dann ist es total egal, was reingeht, solange es ein `phone` hat (User, Company, Deparment, ...).
+  - 
 
 
 
