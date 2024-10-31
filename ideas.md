@@ -22,7 +22,8 @@
   - Wenn wir dem Generic ein `extends {phone: string}` machen, dann ist es total egal, was reingeht, solange es ein `phone` hat (User, Company, Deparment, ...).
   - Es nennt sich _type argument inference_, wenn wir den Typen nicht explizit angeben müssen.
   - Theoretisch können wir auch ein `interface PhoneAble { phone: string }` machen und das als Type-Argument übergeben. Aber dadurch verlieren wir den Return-Type.
-  - 
+- `domain/search.js`
+  - Bonusaufgabe das korrekt mit Generics zu typen.
 
 
 
