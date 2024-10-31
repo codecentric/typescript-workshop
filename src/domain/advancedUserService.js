@@ -1,15 +1,13 @@
 import {getUserRank} from './user.js';
-import {loadAllUsers, loadUser} from '../api/user.js';
 import {UserService} from './userService.js';
 
 export class AdvancedUserService extends UserService {
     constructor() {
         super();
-        this.users = [];
     }
 
     async loadAllUsers() {
-        this.users = await loadAllUsers();
+        this.users = await super.loadAllUsers();
 
         this.users = this.users.map(user => {
             user.type = !!user.company ? 'EXTERNAL' : 'INTERNAL';
@@ -20,7 +18,7 @@ export class AdvancedUserService extends UserService {
 
     async getUserRank(userId) {
         if (!this.users.includes(userId)) {
-            const user = await this.loadUser(userId);
+            const user = await super.loadUser(userId);
 
             if (!user) {
                 throw new Error(`User with ID ${userId} does not exist`);
