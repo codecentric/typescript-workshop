@@ -59,3 +59,8 @@ export class UserService {
         // Irgendwas ermitteln für externen User
     }
 }
+
+export const formatPhoneNumber = (user) => {
+    user.phone = "**********"
+    return user
+}

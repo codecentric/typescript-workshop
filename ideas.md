@@ -15,8 +15,10 @@
   > }
   > interface ExternalUser {
   >   name: string;
-  >    type: "EXTERNAL";
+  >   type: "EXTERNAL";
   > }
+- formatPhoneNumber für Generics - Es geht ein Internal oder External User rein und kommt entsprechend wieder raus.
+
 
 
 # Handout/Zusammenfassung
