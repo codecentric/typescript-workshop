@@ -1,3 +1,11 @@
+class User {
+    constructor(id, name, company) {
+        this.id = id;
+        this.name = name;
+        this.company = company;
+    }
+}
+
 export class UserService {
     constructor() {
         this.users = [];

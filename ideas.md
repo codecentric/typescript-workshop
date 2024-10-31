@@ -25,7 +25,16 @@
 - `domain/search.js`
   - Bonusaufgabe das korrekt mit Generics zu typen.
 
+# Ablauf gemäß Dateien
 
+1. Lernblock: Grundlagen
+   - .js -> .ts
+   - api/users.js
+   - types.ts
+   - ALLE: api/post.js
+2. Lernblock: Class vs Function
+   - Class als Datenstruktur in Type überführen (class User)
+   - domain/userService.js
 
 # Handout/Zusammenfassung
 
