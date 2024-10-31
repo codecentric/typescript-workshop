@@ -1,8 +1,10 @@
 import {getUserRank} from './user.js';
 import {loadAllUsers, loadUser} from '../api/user.js';
+import {UserService} from './userService.js';
 
-export class AdvancedUserService {
+export class AdvancedUserService extends UserService {
     constructor() {
+        super();
         this.users = [];
     }
 
@@ -14,10 +16,6 @@ export class AdvancedUserService {
         });
 
         return this.users;
-    }
-
-    async loadUser(id) {
-        return loadUser(id);
     }
 
     async getUserRank(userId) {
