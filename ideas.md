@@ -11,11 +11,11 @@
 - Zeigen wie wir mit discriminated Unions die richtige Funktion aufrufen (siehe TODO)
   > interface InternalUser {
   >   name: string;
-  >   type: "INTERNAL_USER";
+  >   type: "INTERNAL";
   > }
   > interface ExternalUser {
   >   name: string;
-  >    type: "EXTERNAL_USER";
+  >    type: "EXTERNAL";
   > }
 
 

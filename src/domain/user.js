@@ -20,6 +20,11 @@ export class UserService {
 
     async loadAllUsers() {
         this.users = await loadAllUsers();
+
+        this.users = this.users.map(user => {
+            user.type = !!user.company ? "EXTERNAL" : "INTERNAL"
+        });
+
         return this.users
     }
 
