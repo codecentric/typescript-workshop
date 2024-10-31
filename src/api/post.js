@@ -1,13 +1,13 @@
 export const getAllPosts = async () => {
-    const posts = await fetch("https://jsonplaceholder.typicode.com/posts")
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts")
 
-    return posts.json()
+    return response.json()
 }
 
 export const getPost = async (id) => {
-    const post = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
 
-    return post.json()
+    return response.json()
 }
 
 export const createPost = async (post) => {
@@ -40,7 +40,7 @@ export const updatePost = async (postId, title, body, userId) => {
 }
 
 export const getPostsOfUser = async (userId) => {
-    const posts = await fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)
 
-    return posts.json()
+    return response.json()
 }
