@@ -45,12 +45,30 @@
    - `any` vs `unknown` vs `never` erklären
 4. Lernblock: Types beim Testen
    - TODO: ???
+   - Test-Cases vorschreiben
+   - Partial erklären
+   - `as X`
+   - Mocks
 5. Lernblock: Tooling
    - TODO: ???
+   - TypeScript
+     - `strict: true` - TypeScript richtig nutzen
+     - `noEmit: true` - `tsc` nur für Typ-Prüfung, `vite` für Build
+     - `noImplicitAny: true` - Implizite `any` vermeiden
+   - `@types/<dependency>`
+     - `const a: Type = callJavaScriptFunctionWithoutTypes()`
+     - Externe Typ-Definitionen, weil manche Projekte keine Typen mitliefern
+     - (`ReturnType<typeof function>` - ReturnType von einer Funktion ermitteln)
+     - (`export type StatusId = (typeof Status)[keyof typeof Status]["id"];`)
+     - TODO: `type.d.ts` Dateien???
+   - ESLint
+     - Unabhängig von TypeScript
+     - `@typescript-eslint`-Plugin bringt die wichtigsten Regeln für TypeScript mit
+     - Hilft dabei, Framework-Regeln einzuhalten (z.B. React-Hooks)
+     - Erlaubt durch import-Regeln, dass Projekt-Bereiche nicht aufeinander zugreifen dürfen
+     - 
 
 - Dinge die fehlen
-  - `as X`
-  - `const a: Type = callJavaScriptFunctionWithoutTypes()`
   - Svelt und Immutable bzw. Re-Render bei State-Änderungen
 
 # Handout/Zusammenfassung
