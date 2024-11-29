@@ -22,8 +22,8 @@ export interface PostService {
     updatePost(
         postId: number,
         userId: number,
-        title?: string,
-        body?: string,
+        title: string | null,
+        body: string | null,
     ): Promise<Post>;
 
     getPostsOfUser(userId: number): Promise<Post[]>;

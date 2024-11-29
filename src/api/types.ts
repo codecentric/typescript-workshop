@@ -10,10 +10,3 @@ export type Post = {
     body: string;
     userId: number;
 };
-
-export type PostUpdate = {
-    postId: number;
-    title: string | undefined;
-    body: string | undefined;
-    userId: number;
-};

@@ -27,14 +27,14 @@ export const getPostService = (): PostService => ({
     async updatePost(
         postId: number,
         userId: number,
-        title?: string,
-        body?: string,
+        title: string | null,
+        body: string | null,
     ): Promise<Post> {
         if (!title && !body) {
             // Nothing to update
             return Promise.reject("Nothing to update");
         }
-        return updatePost({ postId, userId, title, body });
+        return updatePost(postId, userId, title, body);
     },
 
     async getPostsOfUser(userId: number): Promise<Post[]> {
