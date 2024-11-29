@@ -47,7 +47,7 @@ export const getPostService = (): PostService => ({
             // Nothing to update
             return Promise.reject(new Error("Nothing to update"));
         }
-        return updatePost(postId, title, body, userId);
+        return updatePost({ postId, userId, title, body });
     },
 
     async getPostsOfUser(userId: number): Promise<Post[]> {
