@@ -41,7 +41,7 @@
     - domain/userService.js typen
     - domain/userService.js class entfernen
     - ALLE: domain/postService.js typen + class entfernen
-    - Bonus: dashboard.js typen
+    - Bonus: dashboard.js typen // TODO: Noch mehr hinzufügen?
 3. Lernblock: Generics und Co
     - domain/user.js -> getUserRank
     - domain/advancedUserService.js -> updateUserRanks
