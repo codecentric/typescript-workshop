@@ -1,6 +1,4 @@
-export type User = {
-    id: number;
-};
+import {User} from './types.ts';
 
 export const loadAllUsers = async (): Promise<User> => {
     const users = await fetch("https://jsonplaceholder.typicode.com/users")
