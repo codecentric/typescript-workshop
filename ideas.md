@@ -69,6 +69,7 @@
      - 
 
 - Dinge die fehlen
+  - `Promise`, `.then` und `await` behandeln
   - Svelt und Immutable bzw. Re-Render bei State-Änderungen
 
 # Handout/Zusammenfassung
