@@ -1,8 +1,3 @@
-export const formatPhoneNumber = (user) => {
-    user.phone = "**********";
-    return user;
-};
-
 const mapUserData = (users, mapFunction) => {
     return users.map(mapFunction);
 };
