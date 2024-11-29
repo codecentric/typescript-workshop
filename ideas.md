@@ -31,6 +31,7 @@
 # Ablauf gemäß Dateien
 
 1. Lernblock: Grundlagen
+    - Promises und async/await
     - .js -> .ts
     - api/user.js
     - types.ts
