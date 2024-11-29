@@ -1,5 +1,5 @@
-import {getUserRank} from './user.js';
-import {UserService} from './userService.js';
+import { getUserRank } from "./user.js";
+import { UserService } from "./userService.js";
 
 export class AdvancedUserService extends UserService {
     constructor() {
@@ -9,8 +9,8 @@ export class AdvancedUserService extends UserService {
     async loadAllUsers() {
         this.users = await super.loadAllUsers();
 
-        this.users = this.users.map(user => {
-            user.type = !!user.company ? 'EXTERNAL' : 'INTERNAL';
+        this.users = this.users.map((user) => {
+            user.type = !!user.company ? "EXTERNAL" : "INTERNAL";
         });
 
         return this.users;
@@ -30,7 +30,7 @@ export class AdvancedUserService extends UserService {
     }
 
     async updateUserRanks() {
-        this.users = this.users.map(user => {
+        this.users = this.users.map((user) => {
             // TODO: User Rank ermitteln (getUserRankForInternal oder getUserRankForExternal)
         });
     }
