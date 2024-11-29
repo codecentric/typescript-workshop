@@ -2,22 +2,25 @@ import { getUserRank } from "./user.js";
 import { loadAllUsers, loadUser } from "../api/user.ts";
 import { User } from "../api/types.ts";
 
-export class UserService {
+interface UserService {
     users: User[];
+    loadAllUsers(): Promise<User[]>;
+    loadUser(id: number): Promise<User>;
+    getUserRank(userId: number): Promise<string>;
+}
 
-    constructor() {
-        this.users = [];
-    }
+export const getUserService = (): UserService => ({
+    users: [],
 
     async loadAllUsers(): Promise<User[]> {
         this.users = await loadAllUsers();
 
         return this.users;
-    }
+    },
 
     async loadUser(id: number): Promise<User> {
         return loadUser(id);
-    }
+    },
 
     async getUserRank(userId: number): Promise<string> {
         if (!this.users.find((user) => user.id === userId)) {
@@ -27,5 +30,5 @@ export class UserService {
         }
 
         return getUserRank(userId);
-    }
-}
+    },
+});

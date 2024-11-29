@@ -1,8 +1,8 @@
 import { PostService } from "./postService.js";
-import { UserService } from "./userService.js";
+import { getUserService } from "./userService.js";
 
 export const prepareDashboard = async () => {
-    const userService = new UserService();
+    const userService = getUserService();
     const allUsers = await userService.loadAllUsers();
 
     const postService = new PostService();
