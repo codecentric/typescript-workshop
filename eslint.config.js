@@ -3,6 +3,9 @@ import tseslint from "typescript-eslint";
 import eslintConfigPrettier from "eslint-config-prettier";
 
 export default tseslint.config(
+    eslint.configs.recommended,
+    tseslint.configs.recommended,
+    eslintConfigPrettier,
     {
         ignores: ["**/*.js"],
     },
@@ -12,7 +15,4 @@ export default tseslint.config(
             "@typescript-eslint/explicit-function-return-type": "error",
         },
     },
-    eslint.configs.recommended,
-    tseslint.configs.recommended,
-    eslintConfigPrettier,
 );
