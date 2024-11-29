@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "check": "tsc",
+        "check": "npm run prettier:check && npm run lint && tsc",
         "lint": "eslint .",
         "prettier:check": "prettier --check .",
         "prettier:write": "prettier --write .",
