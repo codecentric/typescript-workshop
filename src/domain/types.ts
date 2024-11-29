@@ -10,6 +10,8 @@ export interface UserService {
     getUserRank(userId: number): Promise<string>;
 }
 
+export type UserRank = "Newbie" | "Beginner" | "Advanced";
+
 export interface PostService {
     posts: Post[];
 
