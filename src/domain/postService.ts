@@ -14,9 +14,9 @@ interface PostService {
     createPost(post: Post): Promise<Post>;
     updatePost(
         postId: number,
+        userId: number,
         title?: string,
         body?: string,
-        userId?: number,
     ): Promise<Post>;
     getPostsOfUser(userId: number): Promise<Post[]>;
 }
@@ -39,9 +39,9 @@ export const getPostService = (): PostService => ({
 
     async updatePost(
         postId: number,
+        userId: number,
         title?: string,
         body?: string,
-        userId?: number,
     ): Promise<Post> {
         if (!title && !body) {
             // Nothing to update
