@@ -1,5 +1,5 @@
 import { getUserRank } from "./user.js";
-import { loadAllUsers, loadUser } from "../api/user.js";
+import { loadAllUsers, loadUser } from "../api/user.ts";
 import { User } from "../api/types.ts";
 
 export class UserService {
