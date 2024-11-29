@@ -20,7 +20,7 @@ export class UserService {
     }
 
     async getUserRank(userId: number): Promise<string> {
-        if (!this.users.includes(userId)) {
+        if (!this.users.find((user) => user.id === userId)) {
             const user = await this.loadUser(userId);
 
             this.users.push(user);
