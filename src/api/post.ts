@@ -1,16 +1,18 @@
-export const getAllPosts = async () => {
+import {Post} from './types.ts';
+
+export const getAllPosts = async (): Promise<Post[]> => {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts")
 
     return response.json()
 }
 
-export const getPost = async (id) => {
+export const getPost = async (id: number): Promise<Post> => {
     const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
 
     return response.json()
 }
 
-export const createPost = async (post) => {
+export const createPost = async (post: Post): Promise<Post> => {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
         method: "POST",
         body: JSON.stringify(post),
@@ -22,7 +24,7 @@ export const createPost = async (post) => {
     return response.json()
 }
 
-export const updatePost = async (postId, title, body, userId) => {
+export const updatePost = async (postId: number, title: string, body: string, userId: number): Promise<Post> => {
     const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`, {
         method: "PUT",
         body: JSON.stringify({
@@ -39,7 +41,7 @@ export const updatePost = async (postId, title, body, userId) => {
     return response.json()
 }
 
-export const getPostsOfUser = async (userId) => {
+export const getPostsOfUser = async (userId: number): Promise<Post[]> => {
     const response = await fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)
 
     return response.json()
