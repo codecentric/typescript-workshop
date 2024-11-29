@@ -1,11 +1,11 @@
-import { PostService } from "./postService.js";
+import { getPostService } from "./postService.js";
 import { getUserService } from "./userService.js";
 
 export const prepareDashboard = async () => {
     const userService = getUserService();
     const allUsers = await userService.loadAllUsers();
 
-    const postService = new PostService();
+    const postService = getPostService();
     const allPosts = await postService.loadAllPosts();
 
     return {
@@ -16,7 +16,7 @@ export const prepareDashboard = async () => {
 };
 
 export const updateSinglePost = async (postId) => {
-    const postService = new PostService();
+    const postService = getPostService();
     const post = await postService.loadPost(postId);
 
     return [...postService.posts, post];
