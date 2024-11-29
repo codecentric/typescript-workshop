@@ -1,5 +1,5 @@
-import { getUserRank } from "./user.js";
 import { UserService } from "./userService.js";
+import { getUserRank } from "./getUserRank.js";
 
 export class AdvancedUserService extends UserService {
     constructor() {
