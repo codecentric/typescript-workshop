@@ -32,7 +32,7 @@ export const getPostService = (): PostService => ({
     ): Promise<Post> {
         if (!title && !body) {
             // Nothing to update
-            return Promise.reject(new Error("Nothing to update"));
+            return Promise.reject("Nothing to update");
         }
         return updatePost({ postId, userId, title, body });
     },
