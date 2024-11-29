@@ -1,13 +1,7 @@
 import { getUserRank } from "./user.js";
 import { loadAllUsers, loadUser } from "../api/user.ts";
 import { User } from "../api/types.ts";
-
-interface UserService {
-    users: User[];
-    loadAllUsers(): Promise<User[]>;
-    loadUser(id: number): Promise<User>;
-    getUserRank(userId: number): Promise<string>;
-}
+import { UserService } from "./types.ts";
 
 export const getUserService = (): UserService => ({
     users: [],

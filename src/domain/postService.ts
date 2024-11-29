@@ -6,20 +6,7 @@ import {
     updatePost,
 } from "../api/post.js";
 import { Post } from "../api/types.ts";
-
-interface PostService {
-    posts: Post[];
-    loadAllPosts(): Promise<Post[]>;
-    loadPost(id: number): Promise<Post>;
-    createPost(post: Post): Promise<Post>;
-    updatePost(
-        postId: number,
-        userId: number,
-        title?: string,
-        body?: string,
-    ): Promise<Post>;
-    getPostsOfUser(userId: number): Promise<Post[]>;
-}
+import { PostService } from "./types.ts";
 
 export const getPostService = (): PostService => ({
     posts: [],

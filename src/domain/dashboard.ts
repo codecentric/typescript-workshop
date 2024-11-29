@@ -1,7 +1,9 @@
 import { getPostService } from "./postService.js";
 import { getUserService } from "./userService.js";
+import { Post } from "../api/types.ts";
+import { DashboardData } from "./types.ts";
 
-export const prepareDashboard = async () => {
+export const prepareDashboard = async (): Promise<DashboardData> => {
     const userService = getUserService();
     const allUsers = await userService.loadAllUsers();
 
@@ -15,7 +17,7 @@ export const prepareDashboard = async () => {
     };
 };
 
-export const updateSinglePost = async (postId) => {
+export const updateSinglePost = async (postId: number): Promise<Post[]> => {
     const postService = getPostService();
     const post = await postService.loadPost(postId);
 
