@@ -43,10 +43,11 @@
     - ALLE: domain/postService.js typen + class entfernen
     - Bonus: dashboard.js typen // TODO: Noch mehr hinzufügen?
 3. Lernblock: Generics und Co
-    - domain/user.js -> getUserRank
+    - domain/getUserRank.js
     - domain/advancedUserService.js -> updateUserRanks
-    - domain/user.js -> formatPhoneNumber
-    - ALLE: domain/user.js -> mapUserData + getUserNames (+ search.js)
+    - domain/formatPhoneNumber.js
+    - ALLE: domain/.js
+    - Bonus: domain/search.js
     - `any` vs `unknown` vs `never` erklären
 4. Lernblock: Types beim Testen
     - TODO: ???
