@@ -29,7 +29,7 @@
 
 1. Lernblock: Grundlagen
    - .js -> .ts
-   - api/users.js
+   - api/user.js
    - types.ts
    - ALLE: api/post.js
 2. Lernblock: Class vs Function
