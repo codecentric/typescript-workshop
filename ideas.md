@@ -38,8 +38,9 @@
     - ALLE: api/post.js
 2. Lernblock: Class vs Function
     - Class als Datenstruktur in Type überführen (class User)
-    - domain/userService.js
-    - ALLE: domain/postService.js typen
+    - domain/userService.js typen
+    - domain/userService.js class entfernen
+    - ALLE: domain/postService.js typen + class entfernen
     - Bonus: dashboard.js typen
 3. Lernblock: Generics und Co
     - domain/user.js -> getUserRank
