@@ -1,5 +1,5 @@
-import {getUserRank} from './user.js';
-import {loadAllUsers, loadUser} from '../api/user.js';
+import { getUserRank } from "./user.js";
+import { loadAllUsers, loadUser } from "../api/user.js";
 
 class User {
     constructor(id, name, company) {

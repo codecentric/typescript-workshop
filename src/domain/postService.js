@@ -1,4 +1,10 @@
-import {createPost, getAllPosts, getPost, getPostsOfUser, updatePost} from '../api/post.js';
+import {
+    createPost,
+    getAllPosts,
+    getPost,
+    getPostsOfUser,
+    updatePost,
+} from "../api/post.js";
 
 class Post {
     constructor(postData) {
@@ -31,7 +37,7 @@ export class PostService {
     async updatePost(postId, title, body, userId) {
         if (!title && !body) {
             // Nothing to update
-            return
+            return;
         }
 
         return updatePost(postId, title, body, userId);
