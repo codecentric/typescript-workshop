@@ -74,4 +74,4 @@
 
 # Handout/Zusammenfassung
 
-- Ein Cheat-Cheat drucken, mit den Key-Learnings des Workshops.
+- Ein Cheat-Sheet drucken, mit den Key-Learnings des Workshops?
