@@ -29,10 +29,8 @@ export class AdvancedUserService extends UserService {
         return getUserRank(userId);
     }
 
-    async updateUserRanks() {
-        this.users = this.users.map((user) => {
-            // TODO: User Rank ermitteln (getUserRankForInternal oder getUserRankForExternal)
-        });
+    updateUserRanks() {
+        // TODO: Den Rang aller user neu ermitteln (getUserRankForInternal oder getUserRankForExternal)
     }
 
     getUserRankForInternal(user) {
