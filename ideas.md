@@ -47,7 +47,7 @@
     - domain/advancedUserService.js -> updateUserRanks
     - domain/formatPhoneNumber.js
     - ALLE: domain/user.js -> mapUserData + getUserNames
-    - Bonsu: search.js
+    - Bonus: domain/search.js
     - `any` vs `unknown` vs `never` erklären
 4. Lernblock: Types beim Testen
     - TODO: ???
