@@ -17,7 +17,7 @@ export class AdvancedUserService extends UserService {
     }
 
     async getUserRank(userId) {
-        if (!this.users.includes(userId)) {
+        if (!this.users.find((user) => user.id === userId)) {
             const user = await super.loadUser(userId);
 
             if (!user) {
