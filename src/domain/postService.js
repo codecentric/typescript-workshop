@@ -34,6 +34,10 @@ export class PostService {
         return createPost(post);
     }
 
+    async getPostsOfUser(userId) {
+        return getPostsOfUser(userId);
+    }
+
     async updatePost(postId, title, body, userId) {
         if (!title && !body) {
             // Nothing to update
@@ -41,9 +45,5 @@ export class PostService {
         }
 
         return updatePost(postId, title, body, userId);
-    }
-
-    async getPostsOfUser(userId) {
-        return getPostsOfUser(userId);
     }
 }
