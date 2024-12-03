@@ -47,7 +47,7 @@
     - InternalUser und ExternalUser Type einführen
     - ALLE: domain/setUserType.js
     - ALLE: domain/updateUserRanks.js -> User um `rank` erweitern
-    - domain/formatPhoneNumber.js
+    - domain/formatPhoneNumber.js (brauchen wir das noch?)
     - ALLE: domain/user.js -> mapUserData + getUserNames
     - Bonus: domain/search.js
     - `any` vs `unknown` vs `never` erklären
@@ -76,11 +76,14 @@
         - Erlaubt durch import-Regeln, dass Projekt-Bereiche nicht aufeinander zugreifen dürfen
         -
 
-- Dinge die fehlen
+- Offene TODOs:
+    - Brauchen wir eine kurze Übersicht, zu unserer Domain?
+    - Brauchen wir Sub-Dirs in /domain?
+    - Brauchen wir `domain/post.js`?
     - `Promise`, `.then` und `await` behandeln
     - Svelt und Immutable bzw. Re-Render bei State-Änderungen
     - `bun check` auf `main` grün machen
-    - `type` vs `interface`
+    - `type` vs `interface` (für uns gerade ziehen im Code)
 
 # Handout/Zusammenfassung
 
