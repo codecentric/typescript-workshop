@@ -12,6 +12,14 @@ export interface UserService {
 
 export type UserRank = "Newbie" | "Beginner" | "Advanced";
 
+export type InternalUser = User & {
+    type: "INTERNAL";
+};
+
+export type ExternalUser = User & {
+    type: "EXTERNAL";
+};
+
 export interface PostService {
     posts: Post[];
 
