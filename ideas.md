@@ -46,7 +46,7 @@
     - domain/getUserRank.js -> UserRank Type einführen und auch für getUserRank nutzen
     - InternalUser und ExternalUser Type einführen
     - ALLE: domain/setUserType.js
-    - ALLE: domain/updateUserRanks.js
+    - ALLE: domain/updateUserRanks.js -> User um `rank` erweitern
     - domain/formatPhoneNumber.js
     - ALLE: domain/user.js -> mapUserData + getUserNames
     - Bonus: domain/search.js
