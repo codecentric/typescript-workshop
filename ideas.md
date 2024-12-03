@@ -43,8 +43,10 @@
     - ALLE: domain/postService.js typen + class entfernen
     - Bonus: dashboard.js typen // TODO: Noch mehr hinzufügen?
 3. Lernblock: Generics und Co
-    - domain/getUserRank.js
-    - domain/advancedUserService.js -> updateUserRanks
+    - domain/getUserRank.js -> UserRank Type einführen und auch für getUserRank nutzen
+    - InternalUser und ExternalUser Type einführen
+    - ALLE: domain/setUserType.js
+    - ALLE: domain/updateUserRanks.js
     - domain/formatPhoneNumber.js
     - ALLE: domain/user.js -> mapUserData + getUserNames
     - Bonus: domain/search.js
