@@ -1,5 +1,5 @@
-import { PostService } from "./postService.js";
-import { UserService } from "./userService.js";
+import { PostService } from "../posts/postService.js";
+import { UserService } from "../users/userService.js";
 
 export const prepareDashboard = async () => {
     const userService = new UserService();

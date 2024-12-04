@@ -4,7 +4,7 @@ import {
     getPost,
     getPostsOfUser,
     updatePost,
-} from "../api/post.js";
+} from "../../api/post.js";
 
 class Post {
     constructor(postData) {

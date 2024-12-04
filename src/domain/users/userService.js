@@ -1,4 +1,4 @@
-import { loadAllUsers, loadUser } from "../api/user.js";
+import { loadAllUsers, loadUser } from "../../api/user.js";
 import { getUserRank } from "./getUserRank.js";
 
 class User {
