@@ -44,3 +44,5 @@ export type DashboardData = {
     posts: Post[];
     comments: [];
 };
+
+export type PostFormData = Omit<Post, "id">;

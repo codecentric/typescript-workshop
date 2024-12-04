@@ -5,9 +5,10 @@ import {
     updatePost,
 } from "../../api/post.ts";
 import { Post } from "../../api/types.ts";
+import { PostFormData } from "../types.ts";
 
 export const createNewPost = async (
-    postFormData: Omit<Post, "id">,
+    postFormData: PostFormData,
     userId: number,
 ): Promise<Post> => {
     const allExistingPosts = await getAllPosts();

@@ -1,4 +1,5 @@
 import { Post } from "./types.ts";
+import { PostFormData } from "../domain/types.ts";
 
 export const getAllPosts = async (): Promise<Post[]> => {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -14,7 +15,7 @@ export const getPost = async (id: number): Promise<Post> => {
     return response.json();
 };
 
-export const createPost = async (post: Omit<Post, "id">): Promise<Post> => {
+export const createPost = async (post: PostFormData): Promise<Post> => {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
         method: "POST",
         body: JSON.stringify(post),
