@@ -4,7 +4,7 @@ import {
     getPost,
     updatePost,
 } from "../../api/post.ts";
-import { Post, PostFormData } from "../../types.ts";
+import { Post, PostFormData } from "../../types/post.ts";
 
 export const createNewPost = async (
     postFormData: PostFormData,

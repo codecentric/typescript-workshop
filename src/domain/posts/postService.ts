@@ -5,7 +5,7 @@ import {
     getPostsOfUser,
     updatePost,
 } from "../../api/post.ts";
-import { Post, PostService } from "../../types.ts";
+import { Post, PostService } from "../../types/post.ts";
 
 export const getPostService = (): PostService => ({
     posts: [],

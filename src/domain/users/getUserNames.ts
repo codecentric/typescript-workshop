@@ -1,4 +1,4 @@
-import { User } from "../../types.ts";
+import { User } from "../../types/user.ts";
 
 const mapUserData = <T>(users: User[], mapFunction: (user: User) => T): T[] => {
     return users.map(mapFunction);

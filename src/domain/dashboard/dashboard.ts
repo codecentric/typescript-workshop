@@ -1,6 +1,7 @@
 import { getPostService } from "../posts/postService.ts";
 import { getUserService } from "../users/userService.ts";
-import { DashboardData, Post } from "../../types.ts";
+import { DashboardData } from "./types.ts";
+import { Post } from "../../types/post.ts";
 
 export const prepareDashboard = async (): Promise<DashboardData> => {
     const userService = getUserService();

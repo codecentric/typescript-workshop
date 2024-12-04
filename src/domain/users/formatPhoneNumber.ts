@@ -1,4 +1,4 @@
-import { InternalUser, User } from "../../types.ts";
+import { InternalUser, User } from "../../types/user.ts";
 
 export const formatPhoneNumber = <T extends User>(user: T): T => {
     user.phone = "**********";

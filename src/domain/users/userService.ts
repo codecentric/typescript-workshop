@@ -1,6 +1,6 @@
 import { loadAllUsers, loadUser } from "../../api/user.ts";
-import { User, UserService } from "../../types.ts";
 import { getUserRank } from "./getUserRank.ts";
+import { User, UserService } from "../../types/user.ts";
 
 export const getUserService = (): UserService => ({
     users: [],
