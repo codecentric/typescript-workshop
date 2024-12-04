@@ -10,7 +10,7 @@ export interface UserService {
     getUserRank(userId: number): Promise<string>;
 }
 
-export type UserRank = "Newbie" | "Beginner" | "Advanced";
+export type UserRank = "Newbie" | "Beginner" | "Advanced" | "Expert";
 
 export type InternalUser = User & {
     type: "INTERNAL";

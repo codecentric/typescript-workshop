@@ -1,7 +1,10 @@
+import { UserRank } from "../domain/types.ts";
+
 export type User = {
     id: number;
     name: string;
     company: string;
+    rank?: UserRank;
     phone?: string;
 };
 
