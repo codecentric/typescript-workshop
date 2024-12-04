@@ -1,4 +1,10 @@
-export type UserRank = "Newbie" | "Beginner" | "Advanced" | "Expert";
+// export type UserRankType = "Newbie" | "Beginner" | "Advanced" | "Expert";
+export enum UserRank {
+    NEWBIE = "Newbie",
+    BEGINNER = "Beginner",
+    ADVANCED = "Advanced",
+    EXPERT = "Expert",
+}
 
 export type User = {
     id: number;

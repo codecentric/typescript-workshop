@@ -24,13 +24,13 @@ const getUserRankForInternal = async (
     const postAmount = (await getPostsOfUser(user.id)).length;
 
     if (postAmount === 0) {
-        return "Newbie";
+        return UserRank.NEWBIE;
     } else if (postAmount < 5) {
-        return "Beginner";
+        return UserRank.BEGINNER;
     } else if (postAmount < 10) {
-        return "Advanced";
+        return UserRank.ADVANCED;
     } else {
-        return "Expert";
+        return UserRank.EXPERT;
     }
 };
 
