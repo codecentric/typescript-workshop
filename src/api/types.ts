@@ -2,6 +2,7 @@ export type User = {
     id: number;
     name: string;
     company: string;
+    phone?: string;
 };
 
 export type Post = {
