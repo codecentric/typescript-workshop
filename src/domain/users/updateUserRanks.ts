@@ -1,6 +1,6 @@
-import { ExternalUser, InternalUser, UserRank } from "./../types.ts";
 import { getUserRank } from "./getUserRank.ts";
 import { getPostsOfUser } from "../../api/post.ts";
+import { ExternalUser, InternalUser, UserRank } from "../../types.ts";
 
 export const updateUserRanks = (
     users: (InternalUser | ExternalUser)[],

@@ -1,5 +1,4 @@
-import { Post } from "./types.ts";
-import { PostFormData } from "../domain/types.ts";
+import { Post, PostFormData } from "../types.ts";
 
 export const getAllPosts = async (): Promise<Post[]> => {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts");

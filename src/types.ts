@@ -1,4 +1,19 @@
-import { Post, User } from "../api/types.ts";
+export type UserRank = "Newbie" | "Beginner" | "Advanced" | "Expert";
+
+export type User = {
+    id: number;
+    name: string;
+    company: string;
+    rank?: UserRank;
+    phone?: string;
+};
+
+export type Post = {
+    id: number;
+    title: string;
+    body: string;
+    userId: number;
+};
 
 export interface UserService {
     users: User[];
@@ -9,8 +24,6 @@ export interface UserService {
 
     getUserRank(userId: number): Promise<string>;
 }
-
-export type UserRank = "Newbie" | "Beginner" | "Advanced" | "Expert";
 
 export type InternalUser = User & {
     type: "INTERNAL";
