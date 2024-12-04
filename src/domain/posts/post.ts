@@ -4,8 +4,12 @@ import {
     getPost,
     updatePost,
 } from "../../api/post.ts";
+import { Post } from "../../api/types.ts";
 
-export const createNewPost = async (postFormData, userId) => {
+export const createNewPost = async (
+    postFormData: Omit<Post, "id">,
+    userId: number,
+): Promise<Post> => {
     const allExistingPosts = await getAllPosts();
 
     const titleAlreadyExists = !!allExistingPosts.find(
@@ -25,7 +29,10 @@ export const createNewPost = async (postFormData, userId) => {
     return createPost(post);
 };
 
-export const updateExistingPost = async (postFormData, userId) => {
+export const updateExistingPost = async (
+    postFormData: Post,
+    userId: number,
+): Promise<Post> => {
     const postId = postFormData.id;
     const existingPost = await getPost(postId);
 
@@ -36,5 +43,5 @@ export const updateExistingPost = async (postFormData, userId) => {
     const title = postFormData.title ?? existingPost.title;
     const body = postFormData.body ?? existingPost.body;
 
-    return updatePost(postId, title, body, userId);
+    return updatePost(postId, userId, title, body);
 };

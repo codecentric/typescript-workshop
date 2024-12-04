@@ -14,7 +14,7 @@ export const getPost = async (id: number): Promise<Post> => {
     return response.json();
 };
 
-export const createPost = async (post: Post): Promise<Post> => {
+export const createPost = async (post: Omit<Post, "id">): Promise<Post> => {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
         method: "POST",
         body: JSON.stringify(post),
