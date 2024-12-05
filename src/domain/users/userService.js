@@ -14,8 +14,8 @@ export class UserService {
         this.users = [];
     }
 
-    async loadAllUsers() {
-        this.users = await loadAllUsers();
+    async loadAllUsers(filterWebsite) {
+        this.users = await loadAllUsers(filterWebsite);
 
         return this.users;
     }

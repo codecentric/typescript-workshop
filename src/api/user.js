@@ -1,4 +1,11 @@
-export const loadAllUsers = async () => {
+export const loadAllUsers = async (filterWebsite) => {
+    if (filterWebsite) {
+        const users = await fetch(
+            `https://jsonplaceholder.typicode.com/users?website=${filterWebsite}`,
+        );
+
+        return users.json();
+    }
     const users = await fetch("https://jsonplaceholder.typicode.com/users");
 
     return users.json();
