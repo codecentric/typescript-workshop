@@ -14,11 +14,20 @@
   - `filterWebsite` als Optional-Beispiel
 - `types.ts` einführen (Chris)
 - ALLE: `api/post.js` typen
+
 - Praxis-Retro: Was haben wir gelernt, was war schwierig?
 
 ## 2. Lernblock: Class vs Function
 
-- TODO: Sicherheit gewinnen, warum wollen wir Class loswerden?
+- Wer nutzt denn gerne Klassen in JavaScript?
+- TODO: Kurze Einführung: Was sind Klassen?
+- `class User` in Type überführen
+- `domain/users/userService.js` typen
+- `domain/users/userService.js` `class` entfernen
+  - Stateless-Funktion und State in "Komponente" auslagern
+- ALLE: `domain/posts/postService.js` typen + `class` entfernen
+
+- Praxis-Retro: Was haben wir gelernt, was war schwierig?
 
 ## 3. Lernblock: Generics und Co
 
