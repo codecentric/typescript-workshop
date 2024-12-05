@@ -77,11 +77,10 @@
         -
 
 - Offene TODOs:
-    - Brauchen wir eine kurze Übersicht, zu unserer Domain?
-    - Brauchen wir Sub-Dirs in /domain?
-    - Brauchen wir `domain/post.js`?
-    - `Promise`, `.then` und `await` behandeln
     - Svelt und Immutable bzw. Re-Render bei State-Änderungen
+    - README anpassen
+      - `git clone`
+      - `npm` statt `bun`
     - `bun check` auf `main` grün machen
     - `type` vs `interface` (für uns gerade ziehen im Code)
 
