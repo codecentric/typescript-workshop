@@ -8,7 +8,7 @@
 - `interface`- und `type`-Syntax anhand von `User` (Björn)
     - Kurze Beispiele - `interface` als Go-To nennen
 - Beispiel: `findUserByName` basteln (Björn)
-    - Kein Union-Type, sondern Placeholder-User nutzen
+    - Kein Union-Type, sondern Placeholder-User nutzen (`| undefined` verhindern)
 - `Promise`, `.then` und `await` erklären (Chris)
 - `api/user.js` typen (Chris)
     - `filterWebsite` als Optional-Beispiel
