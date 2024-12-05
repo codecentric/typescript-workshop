@@ -38,6 +38,7 @@
     - ALLE: api/post.js
 2. Lernblock: Class vs Function
     - Class als Datenstruktur in Type überführen (class User)
+      - In JS sinnvoll, weil wir keine Typen haben und dadurch nicht festlegen können, wie ein Objekt aussehen soll
     - domain/userService.js typen
     - domain/userService.js class entfernen
     - ALLE: domain/postService.js typen + class entfernen
