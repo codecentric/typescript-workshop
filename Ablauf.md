@@ -6,6 +6,7 @@
 - Kurze Einführung: Warum TypeScript? (Björn)
 - Vorstellung Fachlichkeit: Blog mit Usern und Posts (Björn)
 - `interface`- und `type`-Syntax anhand von `User` (Björn)
+  - Kurze Beispiele - `interface` als Go-To nennen
 - Beispiel: `findUserByName` basteln (Björn)
   - Kein Union-Type, sondern Placeholder-User nutzen
 - `Promise`, `.then` und `await` erklären (Chris)
@@ -23,6 +24,7 @@
 
 - Kurze Einführung: Was sind Union Types?
 - `UserRank` Type einführen
+  - `enum` vs String-Literal-Union (`enum` kann als Wert genutzt werden)
 - `getUserRank` typen
 - `InternalUser` und `ExternalUser` Type einführen
   - Externe User kriegen richtig nervige Werbung angezeigt
@@ -46,4 +48,26 @@
   - Helper-Funktion mit `Partial`
   - Default-Wert erklären
 - `domain/users/getUserRank.test.ts` füllen
+  - Mocken erklären und `typeof <function>`-Syntax
 - ALLE: `domain/users/userService.test.ts` füllen
+
+- Praxis-Retro: Was haben wir gelernt, was war schwierig?
+
+## 5. Lernblock: Tooling
+
+- TypeScript
+  - `strict: true` - TypeScript richtig nutzen
+  - `noEmit: true` - `tsc` nur für Typ-Prüfung, `vite` für Build
+  - `noImplicitAny: true` - Implizite `any` vermeiden
+- ESLint
+  - Unabhängig von TypeScript
+  - `@typescript-eslint`-Plugin bringt die wichtigsten Regeln für TypeScript mit
+    - `"@typescript-eslint/explicit-function-return-type": "error"` - Funktionen müssen immer einen expliziten Rückgabewert haben
+  - Hilft dabei, Framework-Regeln einzuhalten (z.B. React-Hooks)
+  - Erlaubt durch import-Regeln, dass Projekt-Bereiche nicht aufeinander zugreifen dürfen
+- `@types/<dependency>`
+  - `const a: Type = callJavaScriptFunctionWithoutTypes()`
+  - Externe Typ-Definitionen, weil manche Projekte keine Typen mitliefern
+  - `type.d.ts` Dateien
+  - (`ReturnType<typeof function>` - ReturnType von einer Funktion ermitteln)
+  - (`export type StatusId = (typeof Status)[keyof typeof Status]["id"];`)
