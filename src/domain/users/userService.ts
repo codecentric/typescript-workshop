@@ -5,8 +5,8 @@ import { User, UserService } from "../../types/user.ts";
 export const getUserService = (): UserService => ({
     users: [],
 
-    async loadAllUsers(): Promise<User[]> {
-        this.users = await loadAllUsers();
+    async loadAllUsers(filterWebsite?: string): Promise<User[]> {
+        this.users = await loadAllUsers(filterWebsite);
 
         return this.users;
     },
