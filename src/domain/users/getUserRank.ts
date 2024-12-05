@@ -1,5 +1,4 @@
 import { getPostsOfUser } from "../../api/post.ts";
-
 import { UserRank } from "../../types/user.ts";
 
 export const getUserRank = async (userId: number): Promise<UserRank> => {
