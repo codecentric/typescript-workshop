@@ -6,21 +6,21 @@ export enum UserRank {
     EXPERT = "Expert",
 }
 
-export type User = {
+export interface User {
     id: number;
     name: string;
     company?: string;
     rank?: UserRank;
     phone?: string;
-};
+}
 
-export type InternalUser = User & {
+export interface InternalUser extends User {
     type: "INTERNAL";
-};
+}
 
-export type ExternalUser = User & {
+export interface ExternalUser extends User {
     type: "EXTERNAL";
-};
+}
 
 export interface UserService {
     users: User[];

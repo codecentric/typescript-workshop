@@ -22,12 +22,12 @@ export const createNewPost = async (
     return createPost(postFormData);
 };
 
-export type UpdatePost = {
+export interface UpdatePost {
     id: number;
     userId: number;
     title: string | null;
     body: string | null;
-};
+}
 
 export const updateExistingPost = async (
     postFormData: UpdatePost,

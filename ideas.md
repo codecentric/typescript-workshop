@@ -82,7 +82,6 @@
         - `git clone`
         - `npm` statt `bun`
     - `bun check` auf `main` grün machen
-    - `type` vs `interface` (für uns gerade ziehen im Code)
 
 # Handout/Zusammenfassung
 
