@@ -1,11 +1,5 @@
-import {
-    createPost,
-    getAllPosts,
-    getPost,
-    getPostsOfUser,
-    updatePost,
-} from "../../api/post.js";
-import { createNewPost, updateExistingPost } from "./post.js";
+import { getAllPosts, getPost, getPostsOfUser } from "../../api/post.js";
+import { createNewPost, updateExistingPost } from "./postRepository.js";
 
 class Post {
     constructor(postData) {
