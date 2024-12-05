@@ -8,7 +8,6 @@ import { Post, PostFormData } from "../../types/post.ts";
 
 export const createNewPost = async (
     postFormData: PostFormData,
-    userId: number,
 ): Promise<Post> => {
     const allExistingPosts = await getAllPosts();
 
@@ -20,18 +19,18 @@ export const createNewPost = async (
         throw new Error("Title already exists");
     }
 
-    const post = {
-        title: postFormData.title,
-        body: postFormData.body,
-        userId: userId,
-    };
+    return createPost(postFormData);
+};
 
-    return createPost(post);
+export type UpdatePost = {
+    id: number;
+    userId: number;
+    title: string | null;
+    body: string | null;
 };
 
 export const updateExistingPost = async (
-    postFormData: Post,
-    userId: number,
+    postFormData: UpdatePost,
 ): Promise<Post> => {
     const postId = postFormData.id;
     const existingPost = await getPost(postId);
@@ -43,5 +42,5 @@ export const updateExistingPost = async (
     const title = postFormData.title ?? existingPost.title;
     const body = postFormData.body ?? existingPost.body;
 
-    return updatePost(postId, userId, title, body);
+    return updatePost(postId, postFormData.userId, title, body);
 };

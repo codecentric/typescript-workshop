@@ -1,11 +1,6 @@
-import {
-    createPost,
-    getAllPosts,
-    getPost,
-    getPostsOfUser,
-    updatePost,
-} from "../../api/post.ts";
+import { getAllPosts, getPost, getPostsOfUser } from "../../api/post.ts";
 import { Post, PostService } from "../../types/post.ts";
+import { createNewPost, updateExistingPost } from "./postRepository.ts";
 
 export const getPostService = (): PostService => ({
     posts: [],
@@ -20,7 +15,7 @@ export const getPostService = (): PostService => ({
     },
 
     async createPost(post: Post): Promise<Post> {
-        return createPost(post);
+        return createNewPost(post);
     },
 
     async updatePost(
@@ -33,7 +28,7 @@ export const getPostService = (): PostService => ({
             // Nothing to update
             return Promise.reject("Nothing to update");
         }
-        return updatePost(postId, userId, title, body);
+        return updateExistingPost({ id: postId, userId, title, body });
     },
 
     async getPostsOfUser(userId: number): Promise<Post[]> {
