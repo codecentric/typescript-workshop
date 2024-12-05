@@ -78,10 +78,6 @@
 
 - Offene TODOs:
     - Svelt und Immutable bzw. Re-Render bei State-Änderungen
-    - README anpassen
-        - `git clone`
-        - `npm` statt `bun`
-    - `bun check` auf `main` grün machen
 
 # Handout/Zusammenfassung
 
