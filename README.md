@@ -6,6 +6,12 @@
 2. Change into the directory with `cd typescript-workshop`
 3. Install dependencies with `npm ci`
 
-## Check TypeScript
+## Check code quality
 
-1. Run `bun check` to check TypeScript files
+1. Run `npm run check`
+
+This will run the following tools:
+
+- `prettier` to check code formatting
+- `eslint` to check code quality
+- `tsc` to check TypeScript type errors
