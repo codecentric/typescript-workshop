@@ -5,6 +5,7 @@ import {
     getPostsOfUser,
     updatePost,
 } from "../../api/post.js";
+import { createNewPost, updateExistingPost } from "./post.js";
 
 class Post {
     constructor(postData) {
@@ -31,7 +32,7 @@ export class PostService {
     }
 
     async createPost(post) {
-        return createPost(post);
+        return createNewPost(post);
     }
 
     async getPostsOfUser(userId) {
@@ -44,6 +45,6 @@ export class PostService {
             return;
         }
 
-        return updatePost(postId, title, body, userId);
+        return updateExistingPost({ id: postId, title, body }, userId);
     }
 }
