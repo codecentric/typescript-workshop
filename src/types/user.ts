@@ -9,7 +9,7 @@ export enum UserRank {
 export type User = {
     id: number;
     name: string;
-    company: string;
+    company?: string;
     rank?: UserRank;
     phone?: string;
 };
