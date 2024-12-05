@@ -87,3 +87,4 @@
 # Handout/Zusammenfassung
 
 - Ein Cheat-Sheet drucken, mit den Key-Learnings des Workshops?
+  - Oder `Learnings.md` erstellen
