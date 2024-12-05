@@ -83,6 +83,7 @@
     - Svelt und Immutable bzw. Re-Render bei State-Änderungen
     - `bun check` auf `main` grün machen
     - `type` vs `interface` (für uns gerade ziehen im Code)
+    - Try-Catch für APIs (`response.ok`)
 
 # Handout/Zusammenfassung
 
