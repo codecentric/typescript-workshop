@@ -37,6 +37,7 @@
 - `domain/users/formatPhaseNumber.js` typen
 - ALLE: `domain/users/getUserNames.js` typen
 - Bonus: `domain/dashboard/search.js` typen
+- (`any` vs `unknown` vs `never` erklären)
 
 - Praxis-Retro: Was haben wir gelernt, was war schwierig?
 
