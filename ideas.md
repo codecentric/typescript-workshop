@@ -79,12 +79,12 @@
 - Offene TODOs:
     - Svelt und Immutable bzw. Re-Render bei State-Änderungen
     - README anpassen
-      - `git clone`
-      - `npm` statt `bun`
+        - `git clone`
+        - `npm` statt `bun`
     - `bun check` auf `main` grün machen
     - `type` vs `interface` (für uns gerade ziehen im Code)
 
 # Handout/Zusammenfassung
 
 - Ein Cheat-Sheet drucken, mit den Key-Learnings des Workshops?
-  - Oder `Learnings.md` erstellen
+    - Oder `Learnings.md` erstellen

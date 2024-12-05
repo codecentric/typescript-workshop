@@ -6,12 +6,12 @@
 - Kurze Einführung: Warum TypeScript? (Björn)
 - Vorstellung Fachlichkeit: Blog mit Usern und Posts (Björn)
 - `interface`- und `type`-Syntax anhand von `User` (Björn)
-  - Kurze Beispiele - `interface` als Go-To nennen
+    - Kurze Beispiele - `interface` als Go-To nennen
 - Beispiel: `findUserByName` basteln (Björn)
-  - Kein Union-Type, sondern Placeholder-User nutzen
+    - Kein Union-Type, sondern Placeholder-User nutzen
 - `Promise`, `.then` und `await` erklären (Chris)
 - `api/user.js` typen (Chris)
-  - `filterWebsite` als Optional-Beispiel
+    - `filterWebsite` als Optional-Beispiel
 - `types.ts` einführen (Chris)
 - ALLE: `api/post.js` typen
 
@@ -24,7 +24,7 @@
 - `class User` in Type überführen (Chris)
 - `domain/users/userService.js` typen (Chris)
 - `domain/users/userService.js` `class` entfernen (Chris)
-  - Stateless-Funktion und State in "Komponente" auslagern
+    - Stateless-Funktion und State in "Komponente" auslagern
 - ALLE: `domain/posts/postService.js` typen + `class` entfernen
 
 - Praxis-Retro: Was haben wir gelernt, was war schwierig?
@@ -33,10 +33,10 @@
 
 - Kurze Einführung: Was sind Union Types? (Björn)
 - `UserRank` Type einführen (Björn)
-  - `enum` vs String-Literal-Union (`enum` kann als Wert genutzt werden)
+    - `enum` vs String-Literal-Union (`enum` kann als Wert genutzt werden)
 - `getUserRank` typen (Björn)
 - `InternalUser` und `ExternalUser` Type einführen (Björn)
-  - Externe User kriegen richtig nervige Werbung angezeigt
+    - Externe User kriegen richtig nervige Werbung angezeigt
 - ALLE: `domain/users/setUserType.js` typen
 - ALLE: `domain/users/updateUserRanks.js` typen
 - Discriminated Unions erklären (Björn)
@@ -55,10 +55,10 @@
 - Wer schreibt gerne Tests? (Chris)
 - Kurze Einführung: Warum sind Testen wichtig und wie helfen Types? (Chris)
 - `domain/users/setUserType.test.ts` füllen (Chris)
-  - Helper-Funktion mit `Partial`
-  - Default-Wert erklären
+    - Helper-Funktion mit `Partial`
+    - Default-Wert erklären
 - `domain/users/getUserRank.test.ts` füllen (Björn)
-  - Mocken erklären und `typeof <function>`-Syntax
+    - Mocken erklären und `typeof <function>`-Syntax
 - ALLE: `domain/users/userService.test.ts` füllen
 
 - Praxis-Retro: Was haben wir gelernt, was war schwierig?
@@ -66,18 +66,18 @@
 ## 5. Lernblock: Tooling
 
 - TypeScript (Chris)
-  - `strict: true` - TypeScript richtig nutzen
-  - `noEmit: true` - `tsc` nur für Typ-Prüfung, `vite` für Build
-  - `noImplicitAny: true` - Implizite `any` vermeiden
+    - `strict: true` - TypeScript richtig nutzen
+    - `noEmit: true` - `tsc` nur für Typ-Prüfung, `vite` für Build
+    - `noImplicitAny: true` - Implizite `any` vermeiden
 - ESLint (Björn)
-  - Unabhängig von TypeScript
-  - `@typescript-eslint`-Plugin bringt die wichtigsten Regeln für TypeScript mit
-    - `"@typescript-eslint/explicit-function-return-type": "error"` - Funktionen müssen immer einen expliziten Rückgabewert haben
-  - Hilft dabei, Framework-Regeln einzuhalten (z.B. React-Hooks)
-  - Erlaubt durch import-Regeln, dass Projekt-Bereiche nicht aufeinander zugreifen dürfen
+    - Unabhängig von TypeScript
+    - `@typescript-eslint`-Plugin bringt die wichtigsten Regeln für TypeScript mit
+        - `"@typescript-eslint/explicit-function-return-type": "error"` - Funktionen müssen immer einen expliziten Rückgabewert haben
+    - Hilft dabei, Framework-Regeln einzuhalten (z.B. React-Hooks)
+    - Erlaubt durch import-Regeln, dass Projekt-Bereiche nicht aufeinander zugreifen dürfen
 - `@types/<dependency>` (Chris)
-  - `const a: Type = callJavaScriptFunctionWithoutTypes()`
-  - Externe Typ-Definitionen, weil manche Projekte keine Typen mitliefern
-  - `type.d.ts` Dateien
-  - (`ReturnType<typeof function>` - ReturnType von einer Funktion ermitteln)
-  - (`export type StatusId = (typeof Status)[keyof typeof Status]["id"];`)
+    - `const a: Type = callJavaScriptFunctionWithoutTypes()`
+    - Externe Typ-Definitionen, weil manche Projekte keine Typen mitliefern
+    - `type.d.ts` Dateien
+    - (`ReturnType<typeof function>` - ReturnType von einer Funktion ermitteln)
+    - (`export type StatusId = (typeof Status)[keyof typeof Status]["id"];`)
