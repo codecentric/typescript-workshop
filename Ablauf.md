@@ -33,14 +33,16 @@
 ## 3. Lernblock: Generics und Co
 
 - Kurze Einführung: Was sind Union Types? (Björn)
+    - `?.` und `!.` erklären
 - `UserRank` Type einführen (Björn)
     - `enum` vs String-Literal-Union (`enum` kann als Wert genutzt werden)
 - `getUserRank` typen (Björn)
 - `InternalUser` und `ExternalUser` Type einführen (Björn)
     - Externe User kriegen richtig nervige Werbung angezeigt
-- ALLE: `domain/users/setUserType.js` typen
+- `domain/users/setUserType.js` typen (Björn)
+    - Discriminated Unions erklären
+    - Casten mit `as` (KEIN `as unknown` nutzen!)
 - ALLE: `domain/users/updateUserRanks.js` typen
-- Discriminated Unions erklären (Björn)
 
 - Wer kennt Generics? (Chris)
 - Kurze Einführung: Was sind Generics, wofür brauchen wir sie? (Chris)
