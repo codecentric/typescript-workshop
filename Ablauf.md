@@ -5,6 +5,7 @@
 - Kurze Abfragen: Wer hat schon Erfahrung mit TypeScript? (Björn)
 - Kurze Einführung: Warum TypeScript? (Björn)
 - Vorstellung Fachlichkeit: Blog mit Usern und Posts (Björn)
+- Primitive Typen in JavaScript erklären
 - `interface`- und `type`-Syntax anhand von `User` (Björn)
     - Kurze Beispiele - `interface` als Go-To nennen
 - Beispiel: `findUserByName` basteln (Björn)
