@@ -1,3 +1,6 @@
+import { getPostsOfUser } from "../../api/post";
+import { getUserRank } from "./getUserRank.ts";
+
 export const updateUserRanks = (users) => {
     return users.map((user) => {
         switch (user.type) {
@@ -7,16 +10,24 @@ export const updateUserRanks = (users) => {
             case "EXTERNAL":
                 user.rank = getUserRankForExternal(user);
                 break;
-            default:
-                throw new Error(`Unknown user type: ${user.type}`);
         }
     });
 };
 
-const getUserRankForInternal = (user) => {
-    // Irgendwas ermitteln für internen User
+const getUserRankForInternal = async (user) => {
+    const postAmount = (await getPostsOfUser(user.id)).length;
+
+    if (postAmount === 0) {
+        return "Newbie";
+    } else if (postAmount < 5) {
+        return "Beginner";
+    } else if (postAmount < 10) {
+        return "Advanced";
+    } else {
+        return "Expert";
+    }
 };
 
 const getUserRankForExternal = (user) => {
-    // Irgendwas ermitteln für externen User
+    return getUserRank(user.id);
 };
