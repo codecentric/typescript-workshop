@@ -13,6 +13,7 @@ export default tseslint.config(
         files: ["**/*.ts"],
         rules: {
             "@typescript-eslint/explicit-function-return-type": "error",
+            "@typescript-eslint/no-unused-vars": "off",
         },
     },
 );
