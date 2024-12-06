@@ -46,12 +46,13 @@
 
 - Wer kennt Generics? (Chris)
 - Kurze Einführung: Was sind Generics, wofür brauchen wir sie? (Chris)
-- `domain/users/formatPhaseNumber.js` typen (Chris)
+- `domain/users/formatPhoneNumber.js` typen (Chris)
 - ALLE: `domain/users/getUserNames.js` typen
 - Bonus: `domain/dashboard/search.js` typen
-- (`any` vs `unknown` vs `never` erklären)
 
 - Praxis-Retro: Was haben wir gelernt, was war schwierig?
+
+- `any` (vs `unknown` vs `never`) erklären
 
 ## 4. Lernblock: Types beim Testen
 
