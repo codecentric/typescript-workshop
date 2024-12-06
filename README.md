@@ -15,3 +15,5 @@ This will run the following tools:
 - `prettier` to check code formatting
 - `eslint` to check code quality
 - `tsc` to check TypeScript type errors
+
+2. Run `npm run test` to run the tests
