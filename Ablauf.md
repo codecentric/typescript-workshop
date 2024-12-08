@@ -49,6 +49,7 @@
 - Kurze Einführung: Was sind Generics, wofür brauchen wir sie? (Chris)
     - `fetch`-Wrapper als Beispiel
 - `domain/users/03_formatPhoneNumber.js` typen (Chris)
+- Typisierung von Funktionen (Chris)
 - ALLE: `domain/users/03_getUserNames.js` typen
 - Bonus: `domain/dashboard/03_search.js` typen
 
