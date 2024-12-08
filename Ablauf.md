@@ -36,7 +36,7 @@
     - `?.` und `!.` erklären
 - `UserRank` Type einführen (Björn)
     - `enum` vs String-Literal-Union (`enum` kann als Wert genutzt werden)
-- `03_getUserRank` typen (Björn)
+- `domain/users/03_getUserRank.js` typen (Björn)
 - `InternalUser` und `ExternalUser` Type einführen (Björn)
     - Externe User kriegen richtig nervige Werbung angezeigt
 - `domain/users/03_setUserType.js` typen (Björn)
