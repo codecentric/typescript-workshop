@@ -66,7 +66,7 @@
     - Default-Wert erklären
 - `domain/users/04_getUserRank.test.ts` füllen (Björn)
     - Mocken erklären und `typeof <function>`-Syntax
-- ALLE: `domain/users/04_updateUserRanks.test.ts` füllen
+- ALLE: `domain/users/04_updateUserRank.test.ts` füllen
 
 - Praxis-Retro: Was haben wir gelernt, was war schwierig?
 

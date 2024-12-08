@@ -1,17 +1,16 @@
 import { getPostsOfUser } from "../../api/01_post.js";
 import { getUserRank } from "./03_getUserRank.js";
 
-export const updateUserRanks = (users) => {
-    return users.map((user) => {
-        switch (user.type) {
-            case "INTERNAL":
-                user.rank = getUserRankForInternal(user);
-                break;
-            case "EXTERNAL":
-                user.rank = getUserRankForExternal(user);
-                break;
-        }
-    });
+export const updateUserRanks = (user) => {
+    switch (user.type) {
+        case "INTERNAL":
+            user.rank = getUserRankForInternal(user);
+            break;
+        case "EXTERNAL":
+            user.rank = getUserRankForExternal(user);
+            break;
+    }
+    return user;
 };
 
 const getUserRankForInternal = async (user) => {
