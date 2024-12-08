@@ -1,4 +1,4 @@
-import { getPostsOfUser } from "../../api/post.js";
+import { getPostsOfUser } from "../../api/01_post.js";
 
 export const getUserRank = async (userId) => {
     const postAmount = (await getPostsOfUser(userId)).length;

@@ -1,4 +1,4 @@
-import { getAllPosts, getPost, getPostsOfUser } from "../../api/post.js";
+import { getAllPosts, getPost, getPostsOfUser } from "../../api/01_post.js";
 import { createNewPost, updateExistingPost } from "./postRepository.js";
 
 class Post {

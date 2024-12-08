@@ -3,7 +3,7 @@ import {
     getAllPosts,
     getPost,
     updatePost,
-} from "../../api/post.js";
+} from "../../api/01_post.js";
 
 export const createNewPost = async (postFormData, userId) => {
     const allExistingPosts = await getAllPosts();

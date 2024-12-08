@@ -1,5 +1,5 @@
-import { getPostsOfUser } from "../../api/post";
-import { getUserRank } from "./getUserRank.ts";
+import { getPostsOfUser } from "../../api/01_post.js";
+import { getUserRank } from "./03_getUserRank.js";
 
 export const updateUserRanks = (users) => {
     return users.map((user) => {

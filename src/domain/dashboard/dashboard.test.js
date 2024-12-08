@@ -1,6 +1,6 @@
 import { prepareDashboard } from "./dashboard.js";
-import { UserService } from "../users/userService.js";
-import { PostService } from "../posts/postService.js";
+import { UserService } from "../users/02_userService.js";
+import { PostService } from "../posts/02_postService.js";
 
 vi.mock("../users/userService");
 vi.mock("../posts/postService");

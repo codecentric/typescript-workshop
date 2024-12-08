@@ -11,10 +11,10 @@
 - Beispiel: `findUserByName` basteln (Björn)
     - Kein Union-Type, sondern Placeholder-User nutzen (`| undefined` verhindern)
 - `Promise`, `.then` und `await` erklären (Chris)
-- `api/user.js` typen (Chris)
+- `api/01_user.js` typen (Chris)
     - `filterWebsite` als Optional-Beispiel
 - `types.ts` einführen (Chris)
-- ALLE: `api/post.js` typen
+- ALLE: `api/01_post.js` typen
 
 - Praxis-Retro: Was haben wir gelernt, was war schwierig?
 
@@ -23,10 +23,10 @@
 - Wer nutzt denn gerne Klassen in JavaScript? (Björn)
 - TODO: Kurze Einführung: Was sind Klassen? (Björn)
 - `class User` in Type überführen (Chris)
-- `domain/users/userService.js` typen (Chris)
-- `domain/users/userService.js` `class` entfernen (Chris)
+- `domain/users/02_userService.js` typen (Chris)
+- `domain/users/02_userService.js` `class` entfernen (Chris)
     - Stateless-Funktion und State in "Komponente" auslagern
-- ALLE: `domain/posts/postService.js` typen + `class` entfernen
+- ALLE: `domain/posts/02_postService.js` typen + `class` entfernen
 
 - Praxis-Retro: Was haben wir gelernt, was war schwierig?
 
@@ -36,19 +36,19 @@
     - `?.` und `!.` erklären
 - `UserRank` Type einführen (Björn)
     - `enum` vs String-Literal-Union (`enum` kann als Wert genutzt werden)
-- `getUserRank` typen (Björn)
+- `03_getUserRank` typen (Björn)
 - `InternalUser` und `ExternalUser` Type einführen (Björn)
     - Externe User kriegen richtig nervige Werbung angezeigt
-- `domain/users/setUserType.js` typen (Björn)
+- `domain/users/03_setUserType.js` typen (Björn)
     - Discriminated Unions erklären
     - Casten mit `as` (KEIN `as unknown` nutzen!)
-- ALLE: `domain/users/updateUserRanks.js` typen
+- ALLE: `domain/users/03_updateUserRanks.js` typen
 
 - Wer kennt Generics? (Chris)
 - Kurze Einführung: Was sind Generics, wofür brauchen wir sie? (Chris)
-- `domain/users/formatPhoneNumber.js` typen (Chris)
-- ALLE: `domain/users/getUserNames.js` typen
-- Bonus: `domain/dashboard/search.js` typen
+- `domain/users/03_formatPhoneNumber.js` typen (Chris)
+- ALLE: `domain/users/03_getUserNames.js` typen
+- Bonus: `domain/dashboard/03_search.js` typen
 
 - Praxis-Retro: Was haben wir gelernt, was war schwierig?
 
@@ -58,12 +58,12 @@
 
 - Wer schreibt gerne Tests? (Chris)
 - Kurze Einführung: Warum sind Testen wichtig und wie helfen Types? (Chris)
-- `domain/users/setUserType.test.ts` füllen (Chris)
+- `domain/users/04_setUserType.test.ts` füllen (Chris)
     - Helper-Funktion mit `Partial`
     - Default-Wert erklären
-- `domain/users/getUserRank.test.ts` füllen (Björn)
+- `domain/users/04_getUserRank.test.ts` füllen (Björn)
     - Mocken erklären und `typeof <function>`-Syntax
-- ALLE: `domain/users/updateUserRanks.test.ts` füllen
+- ALLE: `domain/users/04_updateUserRanks.test.ts` füllen
 
 - Praxis-Retro: Was haben wir gelernt, was war schwierig?
 
