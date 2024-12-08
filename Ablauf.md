@@ -83,11 +83,8 @@
     - Hilft dabei, Framework-Regeln einzuhalten (z.B. React-Hooks)
     - Erlaubt durch import-Regeln, dass Projekt-Bereiche nicht aufeinander zugreifen dürfen
 - `@types/<dependency>` (Chris)
-    - `const a: Type = callJavaScriptFunctionWithoutTypes()`
     - Externe Typ-Definitionen, weil manche Projekte keine Typen mitliefern
-    - `type.d.ts` Dateien
-    - (`ReturnType<typeof function>` - ReturnType von einer Funktion ermitteln)
-    - (`export type StatusId = (typeof Status)[keyof typeof Status]["id"];`)
+- `type.d.ts` Dateien
 
 ## Optional
 
