@@ -33,3 +33,6 @@
     - `someFunctionMock.mockResolvedValue(...)`
 
 ## 5. Lernblock: Tooling
+
+- TypeScript so streng wie möglich konfigurieren
+- `types.d.ts` vermeiden
