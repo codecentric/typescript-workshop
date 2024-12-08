@@ -34,7 +34,7 @@
 ## 3. Lernblock: Generics und Co
 
 - Kurze Einführung: Was sind Union Types? (Björn)
-    - `?.` und `!.` erklären
+    - `?.` und `!.` erklären (`findUserByName`-Beispiel)
 - `UserRank` Type einführen (Björn)
     - `enum` vs String-Literal-Union (`enum` kann als Wert genutzt werden)
 - `domain/users/03_getUserRank.js` typen (Björn)
@@ -47,6 +47,7 @@
 
 - Wer kennt Generics? (Chris)
 - Kurze Einführung: Was sind Generics, wofür brauchen wir sie? (Chris)
+    - `fetch`-Wrapper als Beispiel
 - `domain/users/03_formatPhoneNumber.js` typen (Chris)
 - ALLE: `domain/users/03_getUserNames.js` typen
 - Bonus: `domain/dashboard/03_search.js` typen
