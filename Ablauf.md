@@ -45,6 +45,8 @@
     - Casten mit `as` (KEIN `as unknown` nutzen!)
 - ALLE: `domain/users/03_updateUserRanks.js` typen
 
+- Optional: Praxis-Retro: Was haben wir gelernt, was war schwierig?
+
 - Wer kennt Generics? (Chris)
 - Kurze Einführung: Was sind Generics, wofür brauchen wir sie? (Chris)
     - `fetch`-Wrapper als Beispiel
@@ -54,8 +56,6 @@
 - Bonus: `domain/dashboard/03_search.js` typen
 
 - Praxis-Retro: Was haben wir gelernt, was war schwierig?
-
-- `any` (vs `unknown` vs `never`) erklären
 
 ## 4. Lernblock: Types beim Testen
 
@@ -88,3 +88,7 @@
     - `type.d.ts` Dateien
     - (`ReturnType<typeof function>` - ReturnType von einer Funktion ermitteln)
     - (`export type StatusId = (typeof Status)[keyof typeof Status]["id"];`)
+
+## Optional
+
+- `any` (vs `unknown` vs `never`) erklären
