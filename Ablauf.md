@@ -14,6 +14,7 @@
 - `Promise`, `.then` und `await` erklären (Chris)
 - `api/01_user.js` typen (Chris)
     - `filterWebsite` als Optional-Beispiel
+- `Post` interface einführen
 - ALLE: `api/01_post.js` typen
 
 - Praxis-Retro: Was haben wir gelernt, was war schwierig?
