@@ -7,13 +7,13 @@
 - Vorstellung Fachlichkeit: Blog mit Usern und Posts (Björn)
 - Primitive Typen in JavaScript erklären
 - `interface`- und `type`-Syntax anhand von `User` (Björn)
+    - `types.ts` einführen
     - Kurze Beispiele - `interface` als Go-To nennen
 - Beispiel: `findUserByName` basteln (Björn)
     - Kein Union-Type, sondern Placeholder-User nutzen (`| undefined` verhindern)
 - `Promise`, `.then` und `await` erklären (Chris)
 - `api/01_user.js` typen (Chris)
     - `filterWebsite` als Optional-Beispiel
-- `types.ts` einführen (Chris)
 - ALLE: `api/01_post.js` typen
 
 - Praxis-Retro: Was haben wir gelernt, was war schwierig?
