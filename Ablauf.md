@@ -21,7 +21,7 @@
 ## 2. Lernblock: Class vs Function
 
 - Wer nutzt denn gerne Klassen in JavaScript? (Björn)
-- TODO: Kurze Einführung: Was sind Klassen? (Björn)
+- Kurze Einführung: Was sind Klassen? (Björn)
 - `class User` in Type überführen (Chris)
 - `domain/users/02_userService.js` typen (Chris)
 - `domain/users/02_userService.js` `class` entfernen (Chris)
